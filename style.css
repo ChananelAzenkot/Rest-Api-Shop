@@ -98,6 +98,9 @@ td {
     .frame {
         width: 90%;
         border-radius: 0px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
     }
 
     h1 {
@@ -110,12 +113,21 @@ td {
 
     button {
         padding: 6px 10px;
+        margin: 10px;
     }
 
-    input, select {
+    input {
         padding: 6px 10px;
+        padding-right: 5px;
+        margin-top: 10;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 230px;
+        height: 20px;
     }
-
     table {
         font-size: 12px;
     }
@@ -123,13 +135,15 @@ td {
     th, td {
         padding: 4px;
     }
-
-    .login, .user, .products {
-        display: block;
-    }
-
     .login {
         margin-bottom: 16px;
+        padding-right: 5px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .user, .products {
