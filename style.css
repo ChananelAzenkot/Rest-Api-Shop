@@ -119,7 +119,7 @@ td {
     input {
         padding: 6px 10px;
         padding-right: 5px;
-        margin-top: 10;
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -128,13 +128,7 @@ td {
         width: 230px;
         height: 20px;
     }
-    table {
-        font-size: 12px;
-    }
 
-    th, td {
-        padding: 4px;
-    }
     .login {
         margin-bottom: 16px;
         padding-right: 5px;
@@ -146,37 +140,43 @@ td {
         justify-content: center;
     }
 
-    .user, .products {
-        margin-top: 16px;
-    }
-
-    .user button, .products button {
-        margin: 0px;
-    }
-
-    .user button {
-        margin-bottom: 8px;
-    }
-
-    .products button {
-        margin-bottom: 16px;
-    }
-
-    .user table, .products table {
-        margin-top: 8px;
-    }
-
-    .user table {
-        margin-bottom: 16px;
-    }
-
-    .products table {
-        margin-bottom: 32px;
-    }
-
-    .user table td, .products table td {
-        padding: 2px;
-    }
-
+        input,
+        select {
+            border: 1px solid black;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-top: 3px;
+        }
+    
+        .login,
+        .user,
+        .products {
+            display: none;
+        }
+    
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+    
+        tr {
+            background-color: white;
+        }
+    
+        thead tr {
+            background-color: #3dbf23;
+            color: white;
+        }
+    
+        tr:nth-child(even) {
+            background-color: #d9d9d9;
+        }
+    
+        th,
+        td {
+            padding: 6px;
+            text-align: center;
+        }
 
 } 
